@@ -77,4 +77,8 @@ public class Metodos {
           stmt.executeUpdate(sql);
           conn.commit();
       }
+     public void cerrarBD() throws SQLException{
+         stmt.close();
+         conn.close();
+     }
 }
